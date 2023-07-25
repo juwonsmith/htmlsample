@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML" />
+    <meta name="authors" content="Jon Walker" />
+    <meta name="description" content="web sample" />
+    <!-- <meta http-equiv="refresh" content="5" /> -->
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="workharder.jpg" />
+
+    <title>HTML Sample</title>
+  </head>
+  <body>
+    <header>
+      <h1>A summary of what I have learnt</h1>
+    </header>
+
+    <section>
+      <h2>
+        <strong>Brief History</strong> plus remember this tags?
+        <em>H<sub>2</sub>0</em>
+      </h2>
+      <p>
+        the world wide web was invented by british scientist Tims Berners lee
+        while working at
+        <abbr title="Conseil Européen pour la Recherche Nucléaire">CERN</abbr>
+      </p>
+      <pre>
+the purpose of a web browser is to read html documents and display them correctly</pre
+      >
+      <pre>
+the pre tag defines pre formatted text. the txt inside is displayed in a fixed width font.</pre
+      >
+      <pre>this is a deleted text!...<del>disappear</del></pre>
+      <pre>this is an inserted text!...<ins>inserted</ins></pre>
+      <pre></pre>
+    </section>
+
+    <section>
+      <h2><abbr title="hyper text markup language">HTML</abbr> quotation</h2>
+      <blockquote>
+        Life is like riding a bicycle. To keep your balance, you must keep
+        moving.<em>a Blockquote</em>
+      </blockquote>
+      <q>Live is like a challenge </q><em>a quote</em><br />
+      <br />
+      <abbr title="Conseil Européen pour la Recherche Nucléaire">CERN</abbr>
+      <address>juwonoladele772@gmail.com</address>
+      <p><cite>Novaplex: the making</cite> by walker</p>
+    </section>
+
+    <section>
+      <h2>HTML links</h2>
+      <a href="https://www.w3schools.com/tags/ref_av_dom.asp" target="_self"
+        >Link to the w3 resource</a
+      >
+      <a href="https://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"
+        >Link to the w3 resource</a
+      >
+    </section>
+
+    <section>
+      <h2>HTML images</h2>
+      <picture>
+        <source
+          media="(min-width:650px)"
+          srcset="workharder.jpg"
+          width="200px"
+          height="200px"
+        />
+        <source
+          media="(min-width:650px)"
+          srcset="workharder.jpg"
+          width="200px"
+          height="200px"
+        />
+        <img src="workharder.jpg" />
+      </picture>
+    </section>
+
+    <section>
+      <h2>HTML Lists</h2>
+      <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+      </ul>
+
+      <ol start="50">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>HTML Iframes</h2>
+      <p>a web page within a web page</p>
+      <!-- <iframe src="Iframes.html" title="w3schools" height="200" width="300"
+        >webpage</iframe
+      >
+      <i>remember that iframes only works for srcs in your local computer</i> -->
+    </section>
+
+    <section>
+      <h2>Computer Code</h2>
+      <code> x=5; y=6; z= x+y; </code>
+
+      <p>Save the document by pressing<kbd> Ctrl + s</kbd></p>
+      <p>
+        <samp
+          >File not found<br />
+          press f1 to continue</samp
+        >
+      </p>
+    </section>
+
+    <section>
+      <h2>Html semantics</h2>
+      <p>
+        learnt about section, article, header, footer, na, aside, figure,
+        figcaption, time
+      </p>
+    </section>
+
+    <section>
+      <h2>Html entitites and emojis</h2>
+    </section>
+    <section>
+      <h2>HTML Forms</h2>
+      <form id="form1">
+        <label>
+          <span>Fname:</span>
+          <input type="text" name="fname" autocomplete="off" />
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="fname" />
+          <span>Name</span>
+        </label>
+        <label for="cars">
+          <select id="cars" name="cars" size="2" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="ferrari">ferrari</option>
+            <option value="bugatti" selected>Bugatti</option>
+          </select>
+        </label>
+        <textarea name="message" rows="10" cols="30">welcome</textarea>
+
+        <fieldset>
+          <p>this is for grouping related data in a form</p>
+          <legend>personalia</legend>
+          <label>
+            <input type="text" placeholder="name" required />
+            <input type="color" />
+            <input type="date" />
+            <input type="range" name="vol" min="0" max="100" value="75" />
+            <input type="file" multiple name="" readonly />
+          </label>
+        </fieldset>
+      </form>
+      <label for="something">Something: </label>
+      <input type="text" name="something" form="form1" />
+    </section>
+
+    <section>
+      <h2>HTML MEDIA</h2>
+      <video width="320" height="240" controls autoplay muted>  
+          <source src="hellparadise.mp4" type="video/mp4">
+          your browser does not support
+      </video>
+      <audio  controls autoplay muted>  
+          <source src="hellparadise.mp3" type="audio/mp3">
+          your browser does not support
+      </audio>
+
+
+    </section>
+
+    <section>
+      <h2>Others</h2>
+      <label for="progress">downloading</label>
+      <progress id="progress" value="32" max="100">32%</progress>
+    </section>
+  </body>
+</html>
